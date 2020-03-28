@@ -1,0 +1,321 @@
+
+<!--- CSS bootstrap CDN -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="home2.css"/>
+<link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Poppins|Assistant|Raleway|Roboto&display=swap" rel="stylesheet"> 
+
+ 
+<!---font awesome icons CDN-->
+<script src="https://use.fontawesome.com/9c897cc0c4.js"></script>
+
+<!---Javascript/J-Query-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+  $("#lvpl").click(function(){
+    $("#test1").html("<p></p><h6><center>Liverpool Webscraping Project</center></h6><p class = 'h7'>I wanted to combine my love of soccer and trying out a new coding technology--webscraping. I scraped the liverpool player info on the offical website and made a simple page to retrieve that data stored in mysql.</p>");
+  });
+  $("#port").click(function(){
+    $("#test1").html("<p></p><h6><center>Portfolio Website</center></h6><p class = 'h7'> This website was really fun for me to do! I utilized django for the first time and I was really able to make something I am proud of to represent me!</p>");
+  });
+  $("#ffp").click(function(){
+    $("#test1").html("<p></p><h6><center>FeedBack Flash</center></h6><p class = 'h7'>This was the prototype built during my internship with Kohls. This was my first time using bootstrap and any sort of web programming.  I was definitely a learning experience and a fun project to complete.");
+  });
+  $("#trig").click(function(){
+    $("#test1").html("<p></p><h6><center>Romania Map Search</center></h6><p = class ='h7'>Interesting stuff for sure</p>");
+  });
+  
+  $("#wlc").click(function(){
+    $("#edu").html(wlc_info);
+      
+  });
+});
+
+</script>
+
+  <head>
+    <link rel="icon" href="http://example.com/favicon.png">
+  </head>
+
+  <nav class="navbar fixed-top">
+    <a class="navbar-brand" href="#">
+      <img class = "rounded-circle" src="images/f-logo.png" alt="Irenie-Froman" width="50" height="50">
+    </a> 
+
+    <div class ="topnav-right">
+      <a class= "navbar-brand" href="#contact">Contact</a>
+      <a class= "navbar-brand" href="#ex">Experience</a>
+      <a class= "navbar-brand" href="#projects">Projects</a>
+    </div>
+  </nav>
+
+
+
+  <div class="Me">
+    <div class = "centered">
+     <h1>Christina </h1>
+     <h1>Froman</h1>
+     <center>
+      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" style="font-size:48px">
+        <span style='font-size:67px;'>
+          &#8623;
+        </span>
+      </button>
+    </center>
+    <div class="collapse" id="collapseExample">
+      <div class="card2" >
+        <div class="card-body">
+          <h5 class="card-title">
+            <font color = "black">Welcome!</font>
+          </h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Hi, I am a CS student at Wisconsin Lutheran, MKE.
+          </h6>
+          <p class="card-text">
+            I am enjoying my junior year and actually taking a really cool AI class this semester.  I enjoy web development and database systems. Please check out the rest of my website!
+          </p>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+
+  <a id = "projects">
+    <div class="projects">
+      <h1>Projects</h1>
+       <br></br><br></br>
+      <div class="container-marketing">
+        <div class="row justify-content-md-center">
+          <div class="col-lg-5">
+            <img class="rounded-circle" src="images/python.png" alt="python-logo-img" width="140" height="140">
+            <p></p>
+            <h4>Liverpool Webscraping Project</h4>
+            <p></p>
+            <p>
+              <a class="btn btn-secondary" id = "lvpl" role="button" data-toggle="modal" data-target=".bd-example-modal-lg">See More! &raquo;
+              </a>
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <img class="rounded-circle" src="images/django-logo.jpg" alt="django-logo-img" width="140" height="140">
+            <p></p>
+            <h4>Comsci Portfolio Website</h4>
+            <p></p>
+            <p>
+              <a id = "port"class="btn btn-secondary" role="button" data-toggle="modal" data-target=".bd-example-modal-lg">See More! &raquo;
+              </a>
+            </p>
+          </div>
+
+          <div class="col-lg-5">
+            <img class="rounded-circle" src="images/Kohls-01.jpg" alt="kohls-img" width="140" height="140">
+            <p></p>
+            <h4>FeedBack Flash Prototype</h4>
+            <p></p>
+            <p>
+              <a id = "ffp" class="btn btn-secondary"  role="button" data-toggle="modal" data-target=".bd-example-modal-lg">See More! &raquo;
+              </a>
+            </p>
+          </div>
+
+          <div class="col-lg-5">
+            <img class="rounded-circle" src="images/c++.png" alt="c++-img" width="140" height="140">
+            <p></p>
+            <h4>AI Romania Map Search</h4>
+            <p></p>
+            <p>
+              <a  id = "trig" class="btn btn-secondary"  role="button" data-toggle="modal" data-target=".bd-example-modal-lg">See More! &raquo;</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <img class="img-fluid" src="images/computer_2.gif" alt="com-gif-img">
+            <p id = "test1"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a id = "ex">
+    <div class="Education">
+      <h1>Experience</h1>
+      <br></br>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                The Commons
+              </button>
+            </h5>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4"> 
+                  <h3>
+                    <font color = "red">
+                      01.
+                    </font>
+                  </h3>
+                  <h6>
+                    <font color = "#18121E">
+                      Innovation Intern
+                    </font>
+                  </h6>
+                  <h3>
+                    Spring 2019
+                  </h3>
+                </div>
+                <div class="col-8">
+                  <button type = 'button' class='btn btn-outline-dark' disabled>
+                   I worked along side a team of business, design and engineering students to find better ways for customers to give feedback.  We spent 10 weeks ideating, planning and building our solution--Feedback Flash.  You can view the prototype I made here.
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Wisconsin Lutheran College
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4"><div class="panel-body">
+                  <h3>
+                    <font color = "red">
+                    02.
+                    </font>
+                  </h3>
+                  <h6>
+                    <font color="#18121E">
+                      Computer Science Student
+                    </font>
+                  </h6>
+                  <h3>
+                    <font color =' #18121E'>
+                      Fall 2017 - Spring 2021
+                    </font>
+                  </h3>
+                </div>
+              </div>
+              <div class = "col-8">
+                <h5>
+                  <font color = "#18121E">
+                    Coursework:
+                  </font>
+                </h5>
+                <center>
+                  <button type = 'button' class='btn btn-info' disabled>
+                    Internet Programming
+                  </button>
+                  <button type = 'button' class='btn btn-info' disabled>
+                    Computer Architecture
+                  </button>
+                    <button type = 'button' class='btn btn-info' disabled>
+                      Object Oriented Programming
+                    </button>
+                    <button type = 'button' class='btn btn-info' disabled>
+                      Database Systems
+                    </button>
+                    <button type = 'button' class='btn btn-info' disabled>
+                      Computer Graphics
+                    </button>
+                    <button type = 'button' class='btn btn-info' disabled>
+                      Operating Systems
+                    </button>
+                    <button type = 'button' class='btn btn-info' disabled>
+                      Data Structures
+                    </button>
+                    <button type = 'button' class='btn btn-info' disabled>
+                      Data Communications
+                    </button>
+                    <button type = 'button' class='btn btn-info' disabled>
+                      Artifical Intelligence
+                    </button>
+                  </center>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a id="contact">
+    <div class="Contact">
+      <p></p>
+      <h1>
+        Contact
+      </h1>
+      <h4>
+        <center>
+          Let's get in touch!
+        </center>
+      </h4>
+      <p></p>
+      <h4>
+        <center>
+          Check out my Github or connect with me through Linkedin or Email.
+        </center>
+      </h4>
+      <br></br>
+      <a href = "https://github.com/fromchi?tab=repositories">
+        <i class="fa fa-github" aria-hidden="true" style="font-size:200%; color: white;"></i>
+      </a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href = "https://www.linkedin.com/in/christina-froman">
+        <i class="fa fa-linkedin" aria-hidden="true" style="font-size:200%; color: white;"></i>
+      </a>
+      &nbsp; &nbsp; &nbsp; &nbsp;
+      <a href = "mailto: christinafroman@gmail.com">
+        <i class="fa fa-send" style="font-size:180%; color: white;"></i>
+      </a>
+    </div>
+  </a>
+
+  <footer class="page-footer font-small">
+    <font color= "#0F292F">
+      <div class="footer-copyright text-center py-3" >
+       &#169; 2020
+        <a href = "#">
+          <underline>
+            <font color= "#0F292F">
+              Christina Froman
+            </font>
+          </underline>
+        </a>
+      </div>
+    </font>
+  </footer>
+
+
+
+	<!--- jquery/javascript bootstrap CDN -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!--- scalable -->
+<meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes"/>
+
+
+  
+   
+
+
